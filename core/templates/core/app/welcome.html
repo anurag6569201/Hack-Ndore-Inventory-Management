@@ -3,39 +3,50 @@
 
 {% block index %}
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top: 100px;">
   <div class="row">
-    <div class="col-md-12 p-0">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="../../../static/core/image/female." alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="../../../static/core/image/male." alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="../../../static/core/image/waste." alt="">
-            </div>
-        </div>
-        <div class="swiper-button-next mySwiper-swiper-button-next"></div>
-        <div class="swiper-button-prev mySwiper-swiper-button-prev"></div>
-        <div class="swiper-pagination mySwiper-swiper-pagination"></div>
-        <div class="autoplay-progress" style="opacity: 0;">
-            <svg viewBox="0 0 48 48">
-                <circle cx="24" cy="24" r="20"></circle>
-            </svg>
-            <span></span>
-        </div>
-    </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6"></div>
     <div class="col-md-6">
-      div.col
+      <div class="feature-text-div">
+        <h1 class="feature-main-text">IMC <span>Inventory</span></h1>
+      <span class="feature-main-text-para">IMC Indore uses Blinklog for efficient stock control, minimizing waste and optimizing inventory levels.</span>
+      </div>
+    </div>
+    <div class="col-md-6 row features-section">
+      <div class="row col-md-5" style="flex-direction: column;">
+        <div class="feature col-md-12">
+          <a href="">
+            <div class="feature-content feature-content1">
+              <div class="main-text-li" style="display: flex;align-items: left;justify-content: left;flex-direction: column;">
+                <span class="text-features">Machinery</span>
+                <span class="text-features">Non-Machinery</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="feature col-md-12">
+          <div class="feature-content feature-content2">
+            <div class="main-text-li">
+              <span class="text-features">Vehicles</span>
+              <li>garbage trucks</li>
+              <li>fire engines</li>
+            </div>
+          </div>
+        </div>
+        <div class="feature col-md-12">
+          <div class="feature-content"></div>
+        </div>
+      </div>
+      <div class="row col-md-7">
+        <div class="feature col-md-12">
+          <div class="feature-content-odd"></div>
+        </div>
+        <div class="feature col-md-12">
+          <div class="feature-content-odd"></div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 </div>
 
 {% endblock index %}
