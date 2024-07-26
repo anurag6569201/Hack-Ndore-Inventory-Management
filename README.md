@@ -10,6 +10,7 @@
 > for the delivery of public services. Efficient inventory management is crucial to ensure these resources are
 > available when needed, minimizing waste, and optimizing costs. However, many municipal corporations
 > still rely on outdated or manual inventory management systems, leading to several inefficiencies.
+>
 > Description: Current manual and outdated inventory management systems in municipal corporations lead
 > to resource shortages, excess stock, increased costs, and reduced operational efficiency. Errors and delays
 > in manual tracking make it challenging to maintain accurate records, resulting in critical supplies being
