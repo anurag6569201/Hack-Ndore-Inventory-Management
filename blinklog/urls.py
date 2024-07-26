@@ -25,6 +25,9 @@ urlpatterns = [
     # authentication
     path('',include('core.urls')),
     path('user/',include('userauths.urls')),
+
+    # custom apps
+    path('machinery/',include('machinery.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
