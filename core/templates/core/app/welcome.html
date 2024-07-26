@@ -3,7 +3,7 @@
 
 {% block index %}
 
-<div class="container-fluid" style="margin-top: 100px;">
+<div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
       <div class="feature-text-div">
@@ -14,11 +14,13 @@
     <div class="col-md-6 row features-section">
       <div class="row col-md-5" style="flex-direction: column;">
         <div class="feature col-md-12">
-          <a href="{% url 'machinery:machinery' %}">
+          <a href="{% url 'assets_manage:assets_manage' %}">
             <div class="feature-content feature-content1">
-              <div class="main-text-li" style="display: flex;align-items: left;justify-content: left;flex-direction: column;">
-                <span class="text-features">Machinery</span>
-                <span class="text-features">Non-Machinery</span>
+              <div class="main-text-li">
+                <span class="text-features">Asset Management</span>
+                <div style="display: flex;align-items: center;justify-content: center;">
+                  <img src="../../../static/core/image/assets.svg" alt="">
+                </div>
               </div>
             </div>
           </a>
@@ -26,9 +28,7 @@
         <div class="feature col-md-12">
           <div class="feature-content feature-content2">
             <div class="main-text-li">
-              <span class="text-features">Vehicles</span>
-              <li>garbage trucks</li>
-              <li>fire engines</li>
+              <span class="text-features"></span>
             </div>
           </div>
         </div>

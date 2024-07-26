@@ -1,0 +1,53 @@
+{% extends 'assets_manage/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+
+<div class="container">
+    <h1>Vehicle Detail</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <td>{{ vehicle.id }}</td>
+        </tr>
+        <tr>
+            <th>Type</th>
+            <td>{{ vehicle.type }}</td>
+        </tr>
+        <tr>
+            <th>Make</th>
+            <td>{{ vehicle.make }}</td>
+        </tr>
+        <tr>
+            <th>Model</th>
+            <td>{{ vehicle.model }}</td>
+        </tr>
+        <tr>
+            <th>Serial Number</th>
+            <td>{{ vehicle.serial_number }}</td>
+        </tr>
+        <tr>
+            <th>Condition</th>
+            <td>{{ vehicle.condition }}</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>{{ vehicle.location }}</td>
+        </tr>
+        <tr>
+            <th>Purchase Date</th>
+            <td>{{ vehicle.purchase_date }}</td>
+        </tr>
+        <tr>
+            <th>Last Service Date</th>
+            <td>{{ vehicle.last_service_date }}</td>
+        </tr>
+        <tr>
+            <th>Next Service Due</th>
+            <td>{{ vehicle.next_service_due }}</td>
+        </tr>
+    </table>
+    <a href="{% url 'assets_manage:vehicle_list' %}">Back to List</a>
+</div>
+
+{% endblock index %}

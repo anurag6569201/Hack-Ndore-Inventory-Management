@@ -1,0 +1,15 @@
+{% extends 'core/partial/main-base.html' %}
+{% load static %}
+
+{% block appstyling %}
+{% include 'assets_manage/elements/style.html' %}
+{% endblock appstyling %}
+
+{% block mainapp %}
+  {% block index %}
+  {% endblock index %}
+{% endblock mainapp %}
+
+{% block appscripting %}
+{% include 'assets_manage/elements/script.html' %}
+{% endblock appscripting %}

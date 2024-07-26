@@ -1,0 +1,17 @@
+{% extends 'assets_manage/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+
+
+<div class="container">
+    <h1>Add New Vehicle</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'assets_manage:vehicle_list' %}">Back to List</a>
+</div>
+
+{% endblock index %}

@@ -27,7 +27,7 @@ urlpatterns = [
     path('user/',include('userauths.urls')),
 
     # custom apps
-    path('machinery/',include('machinery.urls')),
+    path('assets_manage/',include('assets_manage.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

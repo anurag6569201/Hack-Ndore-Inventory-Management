@@ -1,0 +1,9 @@
+id,type,make,model,serial_number,condition,location,purchase_date,last_service_date,next_service_due
+1,Excavator,Caterpillar,320D,CAT320D12345,Operational,Warehouse A,2022-01-15,2023-01-15,2024-01-15
+2,Bulldozer,Komatsu,D61PX-24,KMTSD61PX12345,Under Repair,Depot 3,2021-06-10,2023-06-10,2024-06-10
+3,Garbage Truck,Volvo,FE,VOLFE67890,Operational,Depot 2,2020-11-25,2023-05-15,2024-05-15
+4,Bus,Mercedes-Benz,Intouro,MBINT45678,Operational,Depot 1,2019-03-30,2023-03-30,2024-03-30
+5,Excavator,JCB,JS220,JCBJS22056789,Maintenance Needed,Warehouse B,2022-07-22,2023-07-22,2024-07-22
+6,Garbage Truck,Scania,P280,SCANP28012345,Operational,Depot 4,2021-09-12,2023-09-12,2024-09-12
+7,Bulldozer,Caterpillar,D6T,CATD6T78901,Operational,Warehouse A,2020-12-05,2023-12-05,2024-12-05
+8,Bus,Iveco,Daily,IVECO12345,Operational,Depot 2,2018-05-16,2023-05-16,2024-05-16

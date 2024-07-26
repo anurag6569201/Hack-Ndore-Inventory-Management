@@ -46,6 +46,15 @@
 }
 
 /* feature-main-text css */
+.feature a{
+    text-decoration: none;
+}
+.feature-content:hover{
+    text-decoration: none;
+    -webkit-box-shadow: 7px 7px 46px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 46px -3px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 46px -3px rgba(0,0,0,0.75);
+}
 .feature-text-div{
     margin-top: 20vh;
 }
@@ -63,25 +72,7 @@
     line-height: 38px;
 }
 .features-section .feature-content1{
-    background-image: url(../image/fem_div.png);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: contain;
     background-color: #82b8e8;
-}
-.features-section .feature-content2{
-    background-image: url(../image/vic_div.png);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-color: #82b8e8;
-}
-
-
-.main-text-li{
-    position: absolute;
-    top: 1em;
-    left: 1em;
 }
 .text-features{
     color: black;
@@ -91,4 +82,10 @@
 }
 .main-text-li{
     list-style: none;
+    padding: 10px;
+}
+.main-text-li img{
+    width: 5em;
+    margin-top: 1em;
+    margin-left: 1em;
 }

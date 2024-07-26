@@ -1,0 +1,39 @@
+{% extends 'assets_manage/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+
+<div class="container">
+    <h1>Vehicle Inventory</h1>
+    <a href="{% url 'assets_manage:vehicle_add' %}">Add New Vehicle</a>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Serial Number</th>
+                <th>Condition</th>
+                <th>Location</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for vehicle in vehicles %}
+            <tr>
+                <td>{{ vehicle.id }}</td>
+                <td>{{ vehicle.type }}</td>
+                <td>{{ vehicle.make }}</td>
+                <td>{{ vehicle.model }}</td>
+                <td>{{ vehicle.serial_number }}</td>
+                <td>{{ vehicle.condition }}</td>
+                <td>{{ vehicle.location }}</td>
+                <td><a href="{% url 'assets_manage:vehicle_detail' vehicle.id %}">View</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock index %}
