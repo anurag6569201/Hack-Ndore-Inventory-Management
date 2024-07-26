@@ -10,4 +10,5 @@ urlpatterns=[
     path('vehicle/add/', views.vehicle_add, name='vehicle_add'),
 
     path('locations/', views.asset_location_view, name='asset_location'),
+    path('status/', views.asset_status_view, name='asset_status'),
 ]

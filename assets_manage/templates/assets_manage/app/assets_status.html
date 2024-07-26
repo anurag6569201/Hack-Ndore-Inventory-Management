@@ -1,0 +1,48 @@
+{% extends 'assets_manage/partial/base.html' %}
+{% load static %}
+{% block index %}
+
+    <style>
+        #map {height: 600px; width: 100%;}
+        .container {padding: 20px;}
+        table {width: 100%; border-collapse: collapse;}
+        table, th, td {border: 1px solid black;}
+        th, td {padding: 10px; text-align: left;}
+        .status-operational {background-color: #a3f8b7 !important; color: #155724 !important;}
+        .status-under-repair {background-color: #fce38f !important; color: #856404 !important;}
+        .status-decommissioned{background-color: #fabdc2 !important; color: #721c24 !important;}
+    </style>
+
+    <div class="container">
+        <h1>Asset Status List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Serial Number</th>
+                    <th>Current Location</th>
+                    <th>Last Known Location</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for asset in assets %}
+                <tr class="status-{{ asset.operational_status_class }}">
+                    <td>{{ asset.id }}</td>
+                    <td>{{ asset.type }}</td>
+                    <td>{{ asset.make }}</td>
+                    <td>{{ asset.model }}</td>
+                    <td>{{ asset.serial_number }}</td>
+                    <td>{{ asset.current_location }}</td>
+                    <td>{{ asset.last_known_location }}</td>
+                    <td>{{ asset.operational_status }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>            
+        </table>
+    </div>
+
+{% endblock index %}

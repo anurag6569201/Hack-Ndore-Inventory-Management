@@ -23,7 +23,7 @@ def vehicle_add(request):
         form = VehicleForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('vehicle_list')
+            return redirect('assets_manage:vehicle_list')
     else:
         form = VehicleForm()
     return render(request, 'assets_manage/app/vehicle_form.html', {'form': form})
@@ -32,3 +32,11 @@ def vehicle_add(request):
 def asset_location_view(request):
     assets = Asset.objects.all()
     return render(request, 'assets_manage/app/assets_location.html', {'assets': assets})
+
+
+
+def asset_status_view(request):
+    assets = Asset.objects.all()
+    for asset in assets:
+        asset.operational_status_class = asset.operational_status.lower().replace(' ', '-')
+    return render(request, 'assets_manage/app/assets_status.html', {'assets': assets})
