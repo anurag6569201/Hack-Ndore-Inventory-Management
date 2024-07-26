@@ -1,0 +1,90 @@
+{% extends 'assets_manage/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Display Asset Locations</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
+    <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+      th, td {
+        padding: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Asset Locations</h1>
+      <div id="map" style="height: 600px; width: 100%;"></div>
+    </div>
+
+    <div class="container">
+      <h1>Asset List</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Serial Number</th>
+            <th>Current Location</th>
+            <th>Last Known Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for asset in assets %}
+          <tr>
+            <td>{{ asset.id }}</td>
+            <td>{{ asset.type }}</td>
+            <td>{{ asset.make }}</td>
+            <td>{{ asset.model }}</td>
+            <td>{{ asset.serial_number }}</td>
+            <td>{{ asset.current_location }}</td>
+            <td>{{ asset.last_known_location }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const key = 'IUWo0TTK0oVKb7v94SZ2'; // Replace with your MapTiler API key
+
+        // Initialize map
+        const map = L.map('map').setView([23.2599, 77.4126], 6); // Center map on Bhopal
+
+        // Add MapTiler layer
+        L.maptilerLayer({
+          apiKey: key,
+          style: L.MaptilerStyle.STREETS // Optional: use other styles if desired
+        }).addTo(map);
+
+        // Add markers for assets
+        {% for asset in assets %}
+          L.marker([{{ asset.latitude }}, {{ asset.longitude }}])
+            .addTo(map)
+            .bindPopup('<b>{{ asset.make }} {{ asset.model }}</b><br>Serial Number: {{ asset.serial_number }}');
+        {% endfor %}
+      });
+    </script>
+  </body>
+</html>
+
+{% endblock index %}

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Vehicle
+from .models import Vehicle,Asset
 from import_export.admin import ImportExportModelAdmin
 
 class VehicleAdmin(ImportExportModelAdmin):
@@ -15,3 +15,13 @@ class VehicleAdmin(ImportExportModelAdmin):
         return self.readonly_fields
 
 admin.site.register(Vehicle, VehicleAdmin)
+
+
+class AssetAdmin(ImportExportModelAdmin):
+    list_display = ('id', 'type', 'make', 'model', 'serial_number', 'condition', 'current_location', 'last_known_location', 'latitude', 'longitude')
+    list_filter = ('type', 'condition', 'current_location')
+    search_fields = ('make', 'model', 'serial_number')
+    ordering = ('id',)
+    fields = ('type', 'make', 'model', 'serial_number', 'condition', 'current_location', 'last_known_location', 'latitude', 'longitude')
+
+admin.site.register(Asset, AssetAdmin)

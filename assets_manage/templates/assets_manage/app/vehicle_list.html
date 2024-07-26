@@ -5,7 +5,8 @@
 
 <div class="container">
     <h1>Vehicle Inventory</h1>
-    <a href="{% url 'assets_manage:vehicle_add' %}">Add New Vehicle</a>
+    <p>Monitor all machinery, vehicles, and equipment with details like make, model, serial number, and condition.</p>
+    <a class="add_vehicle" href="{% url 'assets_manage:vehicle_add' %}">Add New Vehicle</a>
     <table>
         <thead>
             <tr>
@@ -29,7 +30,7 @@
                 <td>{{ vehicle.serial_number }}</td>
                 <td>{{ vehicle.condition }}</td>
                 <td>{{ vehicle.location }}</td>
-                <td><a href="{% url 'assets_manage:vehicle_detail' vehicle.id %}">View</a></td>
+                <td><a class="view_action" href="{% url 'assets_manage:vehicle_detail' vehicle.id %}">View</a></td>
             </tr>
             {% endfor %}
         </tbody>

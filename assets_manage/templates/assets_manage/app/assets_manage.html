@@ -3,10 +3,29 @@
 
 {% block index %}
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="vehicals">
-            
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="vehicle_para">
+                <h3>Assets Inventory Tracking</h3>
+                <p>Asset Inventory Tracking refers to the systematic process of managing and monitoring the assets within an organization. This includes physical assets such as machinery, vehicles, equipment, and other valuable resources. The primary goal of asset inventory tracking is to ensure efficient utilization, maintenance, and management of these assets throughout their lifecycle.</p>
+                <a class="view_list" href="{% url 'assets_manage:vehicle_list' %}">View Vehicle Inventory</a>
+            </div>
+        </div>
+        <div class="col-md-6 vehicle_para_img p-0">
+            <img height="250px" src="../../../static/assets_manage/image/asset.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 vehicle_para_img p-0" style="justify-content: left;">
+            <img height="250px" src="../../../static/assets_manage/image/location.png" alt="">
+        </div>
+        <div class="col-md-6">
+            <div class="vehicle_para">
+                <h3>Location Tracking</h3>
+                <p>Location Tracking refers to the process of monitoring and recording the physical location of assets, individuals, or objects in real-time or at specific intervals. It involves using various technologies and systems to determine and manage the geographic location of entities, and it plays a crucial role in asset management, logistics, security, and operational efficiency.</p>
+                <a class="view_list" href="{% url 'assets_manage:asset_location' %}">View Vehicle's Location</a>
+            </div>
         </div>
     </div>
 </div>

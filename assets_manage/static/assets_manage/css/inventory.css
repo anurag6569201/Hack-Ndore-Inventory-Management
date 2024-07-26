@@ -8,7 +8,6 @@
 }
 
 h1 {
-    text-align: center;
     color: #333;
 }
 
@@ -19,7 +18,7 @@ table {
 }
 
 thead {
-    background-color: #007bff;
+    background-color: #236aa9;
     color: #fff;
 }
 
@@ -37,10 +36,62 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-tr:hover {
+tbody tr:hover {
     background-color: #e9ecef;
 }
 
 form {
     margin-top: 20px;
+}
+.view_list,
+.form_save,
+.back_to_list,
+.view_action,
+.add_vehicle{
+    text-decoration: none;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #236aa9;
+    font-weight: 600;
+}
+.view_list:hover,
+.form_save:hover,
+.back_to_list:hover,
+.view_action:hover,
+.add_vehicle:hover{
+    background-color: #236aa9;
+    color: white;
+}
+
+.back_to_list{
+    margin-top: 10px;
+}
+
+/* form submission css */
+#id_model,
+#id_serial_number,
+#id_condition,
+#id_location,
+#id_purchase_date,
+#id_last_service_date,
+#id_next_service_due,
+#id_type,
+#id_make{
+    border: 1px solid grey;
+    width: 100%;
+    color: grey;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.form-img-div{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.form-img{
+    position: sticky;
+    top: 25vh;
+    width: 20em;
 }

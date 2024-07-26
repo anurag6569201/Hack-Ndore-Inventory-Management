@@ -8,4 +8,6 @@ urlpatterns=[
     path('vehicle/', views.vehicle_list, name='vehicle_list'),
     path('vehicle/<int:pk>/', views.vehicle_detail, name='vehicle_detail'),
     path('vehicle/add/', views.vehicle_add, name='vehicle_add'),
+
+    path('locations/', views.asset_location_view, name='asset_location'),
 ]

@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Vehicle
 from .forms import VehicleForm
-
+from .models import Asset
 
 def assets_manage(request):
     context={
@@ -27,3 +27,8 @@ def vehicle_add(request):
     else:
         form = VehicleForm()
     return render(request, 'assets_manage/app/vehicle_form.html', {'form': form})
+
+
+def asset_location_view(request):
+    assets = Asset.objects.all()
+    return render(request, 'assets_manage/app/assets_location.html', {'assets': assets})
