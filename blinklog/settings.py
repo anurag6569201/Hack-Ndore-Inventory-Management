@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://blinklog.azurewebsites.net','https://127.0.0.1','https://blinklog.anurag.icu']
-
+LOGIN_URL='user/sign-in'
 
 # Application definition
 

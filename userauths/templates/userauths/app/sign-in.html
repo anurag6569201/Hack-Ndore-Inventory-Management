@@ -2,5 +2,139 @@
 {% load static %}
 
 {% block index %}
-sign in
+
+<div class="row">
+    <div class="welcome-image" style="position: relative;">
+        <div class="feature-text-div">
+            <h1 style="text-align: center;" class="feature-main-text">IMC <span>Inventory</span></h1>
+            <p style="text-align: center;width: 100%;" class="feature-main-text-para">IMC Indore uses Blinklog for efficient stock control, <br>minimizing waste and optimizing inventory levels.</p>
+        </div>
+        <img src="../../../static/userauths/image/welcome.jpeg" alt="">
+    </div>
+</div>
+<div class="row">
+    <div id="welcome_signin" class="welcome-sign-in">
+        <div class="storage" id="login-signup-form-container">
+            <div class="container-image">
+                <img src="../../../static/userauths/image/Signin.svg" alt="">
+            </div>
+            <div class="contaning_forms">
+                <div class="login-signup-tab-container">
+                    <a class="login-signup-tab active-login-signup-tab" href="{% url 'userauths:sign-in' %}">Login</a>
+                    <a class="login-signup-tab" href="{% url 'userauths:sign-up' %}">Signup</a>
+                </div>
+                <div class="login-signup-form-content active-login-signup-content" id="login">
+                    {% if messages %}
+                    <script>
+                        setTimeout(function () {
+                            var messagesContainer = document.getElementById('messages-container');
+                            if (messagesContainer) {
+                                messagesContainer.style.display = 'none';
+                                messagesContainer.style.opacity = '0';
+                            }
+                        }, 3000);
+                    </script>
+                    {% endif %}
+                    <form action="" method="POST">
+                        {% csrf_token %}
+
+                        <label class="login-signup-label" for="login_username">Email:</label>
+                        <input class="login-signup-input" type="text" name="email" maxlength="100" required=""
+                            id="login_username" placeholder="Enter Email">
+
+                        <label class="login-signup-label" for="login_password">Password:</label>
+                        <input class="login-signup-input" type="password" name="password"
+                            autocomplete="current-password" required="" id="login_password"
+                            placeholder="Enter Password">
+
+                        <div class="check-buttons">
+                            <div class="form-check">
+                                <input class="form-check-btn" type="radio" name="radio-selection" id="user_radio"
+                                    value="user-checked" checked>
+                                <span class="form-check-label" for="user_radio">User</span>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-btn" type="radio" name="radio-selection" id="verifier_radio"
+                                    value="verifier-checked">
+                                <span class="form-check-label" for="verifier_radio">Verifier</span>
+                            </div>
+                        </div>
+
+                        <button style="margin-top: 1em;" class="login-signup-button" type="submit">Login</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="welcome_signup" class="welcome-sign-up" style="display: none;">
+        <div class="storage" id="login-signup-form-container">
+            <div class="container-image">
+                <img src="../../../static/userauths/image/Signin.svg" alt="">
+            </div>
+            <div class="contaning_forms">
+                <div class="login-signup-tab-container">
+                    <a class="login-signup-tab active-login-signup-tab" href="{% url 'userauths:sign-in' %}">Login</a>
+                    <a class="login-signup-tab" href="{% url 'userauths:sign-up' %}">Signup</a>
+                </div>
+    
+                <div class="login-signup-form-content" id="signup">
+    
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {% if form.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{form.errors}}</strong>
+                        </div>
+                        {% endif %}
+                        <p>
+                            <label class="login-signup-label" for="id_username">Username:</label>
+                            <input placeholder="Enter Username" class="login-signup-input" type="text" name="username" maxlength="100" required
+                                id="id_username">
+                        </p>
+                        <p>
+                            <label class="login-signup-label" for="id_email">Email:</label>
+                            <input placeholder="Enter Email" class="login-signup-input" type="email" name="email" maxlength="320" autofocus required
+                                id="id_email">
+                        </p>
+                        <p>
+                            <label class="login-signup-label" for="id_password1">Password:</label>
+                            <input placeholder="Enter Password" class="login-signup-input" type="password" name="password1" autocomplete="new-password"
+                                required aria-describedby="id_password1_helptext" id="id_password1">
+                        </p>
+                        <p>
+                            <label class="login-signup-label" for="id_password2">Password confirmation:</label>
+                            <input placeholder="Enter Confirm Password" class="login-signup-input" type="password" name="password2" autocomplete="new-password"
+                                required aria-describedby="id_password2_helptext" id="id_password2">
+    
+                            <span class="helptext" id="id_password2_helptext">* Make sure password should have numeric and
+                                alphabets</span>
+                        </p>
+                        
+    
+                        <button class="login-signup-button" type="submit">Register</button>
+                    </form>
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var form = document.querySelector('#signup form');
+    
+                        form.addEventListener('submit', function (event) {
+    
+                            var password1 = document.getElementById('id_password1').value;
+                            var password2 = document.getElementById('id_password2').value;
+    
+                            if (password1.length < 8) {
+                                alert('Password should be at least 8 characters long.');
+                            }
+                        });
+                    });
+                </script>
+    
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock index %}

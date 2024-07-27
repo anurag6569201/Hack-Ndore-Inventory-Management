@@ -20,7 +20,7 @@ def register_view(request):
                                     password=form.cleaned_data['password1'])
             
             login(request, new_user)
-            return redirect("core:index")
+            return redirect("core:user_index")
     else:
         form=UserRegisterForm()
 
@@ -33,9 +33,9 @@ def login_view(request):
     if request.user.is_authenticated:
         messages.warning(request, "Hey, You are already logged in.")
         if not request.user.verified:
-            return redirect('core:index')
+            return redirect('core:user_index')
         if request.user.verified:
-            return redirect("core:verifier")
+            return redirect("core:welcome")
 
     if request.method == "POST":
         email = request.POST.get("email")
@@ -49,7 +49,7 @@ def login_view(request):
                 if user.verified:
                     login(request, user)
                     messages.success(request, "You are logged in.")
-                    return redirect("core:verifier")
+                    return redirect("core:welcome")
                 else:
                     messages.warning(request, "Your account is not verified.")
 
@@ -57,7 +57,7 @@ def login_view(request):
                 if not user.verified:
                     login(request, user)
                     messages.success(request, "You are logged in.")
-                    return redirect("core:index")
+                    return redirect("core:user_index")
                 else:
                     messages.warning(request, "You are Not registered as User.")
                     
