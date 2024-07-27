@@ -1,0 +1,48 @@
+{% extends 'core/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+
+<div class="container">
+    <h1>Staff Inventory</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Department</th>
+                <th>Status</th>
+                <th>Last Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dr. John Smith</td>
+                <td>Doctor</td>
+                <td>Emergency</td>
+                <td>Active</td>
+                <td>2024-07-22</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nurse Jane Doe</td>
+                <td>Nurse</td>
+                <td>ICU</td>
+                <td>Active</td>
+                <td>2024-07-22</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mike Brown</td>
+                <td>Paramedic</td>
+                <td>Ambulance</td>
+                <td>On Leave</td>
+                <td>2024-07-20</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock index %}

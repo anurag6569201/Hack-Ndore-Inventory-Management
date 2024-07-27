@@ -8,8 +8,8 @@
     <table>
         <thead>
             <tr>
-                <th>Bed ID</th>
-                <th>Type</th>
+                <th>ID</th>
+                <th>Location</th>
                 <th>Capacity</th>
                 <th>Available</th>
                 <th>Condition</th>
@@ -18,32 +18,31 @@
         </thead>
         <tbody>
             <tr>
-                <td>B001</td>
-                <td>ICU</td>
+                <td>1</td>
+                <td>Ward A</td>
                 <td>10</td>
                 <td>8</td>
                 <td>Good</td>
                 <td>2024-07-26</td>
             </tr>
             <tr>
-                <td>B002</td>
-                <td>General</td>
-                <td>30</td>
-                <td>25</td>
-                <td>Fair</td>
-                <td>2024-07-25</td>
+                <td>2</td>
+                <td>Ward B</td>
+                <td>15</td>
+                <td>12</td>
+                <td>Good</td>
+                <td>2024-07-26</td>
             </tr>
             <tr>
-                <td>B003</td>
-                <td>Emergency</td>
-                <td>20</td>
-                <td>15</td>
-                <td>Needs Repair</td>
-                <td>2024-07-24</td>
+                <td>3</td>
+                <td>ICU</td>
+                <td>5</td>
+                <td>3</td>
+                <td>Excellent</td>
+                <td>2024-07-26</td>
             </tr>
         </tbody>
     </table>
-    <a href="{% url 'core:health' %}">Back to Home</a>
 </div>
 
 {% endblock index %}

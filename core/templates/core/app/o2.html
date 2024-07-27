@@ -1,0 +1,47 @@
+{% extends 'core/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+
+<div class="container">
+    <h1>Oxygen Cylinders Inventory</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Location</th>
+                <th>Capacity (Liters)</th>
+                <th>Available</th>
+                <th>Condition</th>
+                <th>Last Checked</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Storage Room 1</td>
+                <td>10</td>
+                <td>8</td>
+                <td>Good</td>
+                <td>2024-07-25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Storage Room 2</td>
+                <td>15</td>
+                <td>14</td>
+                <td>Good</td>
+                <td>2024-07-25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Emergency Room</td>
+                <td>5</td>
+                <td>3</td>
+                <td>Needs Replacement</td>
+                <td>2024-07-25</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock index %}

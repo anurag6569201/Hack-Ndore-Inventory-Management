@@ -1,0 +1,48 @@
+{% extends 'core/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+
+<div class="container">
+    <h1>Ambulances Inventory</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Registration Number</th>
+                <th>Type</th>
+                <th>Available</th>
+                <th>Condition</th>
+                <th>Last Maintenance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>AB123CD</td>
+                <td>Basic</td>
+                <td>Yes</td>
+                <td>Good</td>
+                <td>2024-07-20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>EF456GH</td>
+                <td>Advanced</td>
+                <td>No</td>
+                <td>Needs Maintenance</td>
+                <td>2024-07-15</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>IJ789KL</td>
+                <td>Basic</td>
+                <td>Yes</td>
+                <td>Good</td>
+                <td>2024-07-18</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock index %}
