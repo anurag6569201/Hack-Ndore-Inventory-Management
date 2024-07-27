@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-tb8jt=1ujlw2y450zumma*s_$yzodl(3-idsend99u@%9ay+pq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://blinklog.azurewebsites.net','https://127.0.0.1','https://blinklog.anurag.icu']
 
 
 # Application definition
