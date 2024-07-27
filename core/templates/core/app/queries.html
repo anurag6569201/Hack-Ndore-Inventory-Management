@@ -3,10 +3,35 @@
 
 {% block index %}
 
-<div class="container-fluid" style="padding-top: 20px;">
+<div class="container" style="padding-top: 20px;">
+    <h4>Public Queries</h4>
     <div class="row">
-        <h4>Public Queries</h4>
-        {{public_problem}}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Seriousness</th>
+                    <th>Image</th>
+                    <th>Problem Type</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for query in public_problem %}
+                <tr>
+                    <td>{{ query.name }}</td>
+                    <td>{{ query.description }}</td>
+                    <td>{{ query.seriousness }}</td>
+                    <td class="queryimage">
+                        <img src="{{ query.image.url }}" alt="" style="max-width: 100px;">
+                    </td>
+                    <td>{{ query.problem_type }}</td>
+                    <td>{{ query.status }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </div>
 

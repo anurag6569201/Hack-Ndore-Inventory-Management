@@ -5,7 +5,7 @@
     bottom: 1vw;
     right: 1vw;
     z-index: 10005;
-    max-width: 420px;
+    width: 420px;
     border: 2px solid #f7f1ed;
     border-radius: .3em;
 }

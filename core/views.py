@@ -55,3 +55,39 @@ def query(request):
         'public_problem':public_problem
     }
     return render(request,'core/app/queries.html',context)
+
+
+@login_required
+def health(request):
+    context={
+
+    }
+    return render(request,'core/app/health.html',context)
+
+@login_required
+def healthbed(request):
+    context={
+
+    }
+    return render(request,'core/app/beds.html',context)
+
+@login_required
+def healthambu(request):
+    context={
+
+    }
+    return render(request,'core/app/ambu.html',context)
+
+@login_required
+def healthstaff(request):
+    context={
+
+    }
+    return render(request,'core/app/staff.html',context)
+
+@login_required
+def healtho2(request):
+    context={
+
+    }
+    return render(request,'core/app/o2.html',context)

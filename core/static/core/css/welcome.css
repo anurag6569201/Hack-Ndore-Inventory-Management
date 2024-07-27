@@ -20,6 +20,31 @@
     color: #226ba9;
 }
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Gazpacho.ttf') format('truetype');
+  }
+  .feature-text-div{
+    top:30vh;
+    left: 0;
+    position: absolute;
+    padding: 20px;
+  }
+  .feature-main-text{
+    font-size: 5em;
+    font-weight: 800;
+    font-family: 'CustomFont', sans-serif;
+  }
+  .feature-main-text span{
+    color: #226ba9;
+    font-weight: 900;
+  }
+  .feature-main-text-para{
+    font-size: 1.6em;
+    font-weight: 700;
+    color: rgb(40, 39, 39);
+    line-height: 38px;
+  }
 /* feature css */
 .features-section{
     display: flex;
@@ -32,15 +57,29 @@
 }
 .feature-content{
     background-color: #f5f5f5;
-    height: 174px;
+    height: 156px;
     border-radius: 10px;
+}
+.feature-content1{
+    background-color: #ffb1cc;
+}
+.feature-content2{
+    background-color: #c8bbff;
+}
+.feature-content3{
+    background-color: #fec192;
 }
 .feature-content-odd{
     background-color: #f5f5f5;
-    height: 270px;
+    height: 240px;
     border-radius: 10px;
 }
-
+.feature-content-odd1{
+    background-color: #9bc9ff;
+}
+.feature-content-odd2{
+    background-color: #ffdd80;
+}
 /* feature-main-text css */
 .feature a{
     text-decoration: none;
@@ -139,4 +178,10 @@ h1 {
     position: sticky;
     top: 25vh;
     width: 20em;
+}
+
+/* query */
+.queryimage img{
+    width: 20em;
+    border-radius: 10px;
 }

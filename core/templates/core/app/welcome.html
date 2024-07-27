@@ -3,8 +3,14 @@
 
 {% block index %}
 
-<div class="container-fluid">
-  <div class="row">
+<div class="container-fluid" style="min-height: 90vh;display: flex;align-items: center;justify-content: center;width: 100vw;">
+  <div class="row"  style="width: 100%;">
+    <div class="col-md-6">
+      <div class="feature-text-div">
+        <h1 class="feature-main-text">IMC <span>Inventory</span></h1>
+        <p class="feature-main-text-para">IMC Indore uses Blinklog for efficient stock control, <br>minimizing waste and optimizing inventory levels.</p>
+    </div>
+    </div>
     <div class="col-md-6 row features-section">
       <div class="row col-md-5" style="flex-direction: column;">
         <div class="feature col-md-12">
@@ -21,9 +27,9 @@
         </div>
         <div class="feature col-md-12">
             <a href="{% url 'maintain:maintain' %}">
-              <div class="feature-content feature-content1">
+              <div class="feature-content feature-content2">
                 <div class="main-text-li">
-                  <span class="text-features">Maintenance Management</span>
+                  <span class="text-features">Maintenance</span>
                   <div style="display: flex;align-items: center;justify-content: center;">
                     <img src="../../../static/core/image/settings.svg" alt="" style="margin-top: 0;">
                   </div>
@@ -33,7 +39,7 @@
         </div>
         <div class="feature col-md-12">
           <a href="{% url 'core:query' %}">
-            <div class="feature-content feature-content1">
+            <div class="feature-content feature-content3">
               <div class="main-text-li">
                 <span class="text-features">Public Queries</span>
                 <div style="display: flex;align-items: center;justify-content: center;">
@@ -43,13 +49,30 @@
             </div>
           </a>
       </div>
+        
       </div>
       <div class="row col-md-7">
         <div class="feature col-md-12">
-          <div class="feature-content-odd"></div>
+          <div class="feature-content-odd feature-content-odd1">
+            <a href="{% url 'core:health' %}">
+              <div class="main-text-li">
+                <span class="text-features">Health</span>
+                <div style="display: flex;align-items: center;justify-content: center;">
+                  <img style="width: 10em;" src="../../../static/core/image/health.svg" alt="" style="margin-top: 0;">
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
         <div class="feature col-md-12">
-          <div class="feature-content-odd"></div>
+          <div class="feature-content-odd feature-content-odd2">
+            <div class="main-text-li">
+              <span class="text-features">Education</span>
+              <div style="display: flex;align-items: center;justify-content: center;">
+                <img style="width: 10em;" src="../../../static/core/image/edu.svg" alt="" style="margin-top: 0;">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -75,6 +75,3 @@ def get_response(query):
         return answer
     except Exception as e:
         return "Sorry, I couldn't process your request."
-
-response=get_response("")
-print(response)
