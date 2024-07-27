@@ -1,0 +1,48 @@
+{% extends 'core/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+<style>
+    .timer-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #333;
+    }
+</style>
+<div class="container">
+    <a style="opacity: 0;" id="hidden_redirection" href="{% url 'core:user_index' %}"></a>
+    <h1>Success!</h1>
+    <p>Your query has been successfully raised. You will be redirected shortly.
+    <div class="timer-container">
+        <h1>Time Remaining: <span id="timer">6</span> seconds</h1>
+    </div>
+    </p>
+</div>
+<script>
+    setTimeout(function () {
+
+    }, 6000);
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        let timerElement = document.getElementById('timer');
+        let timeRemaining = 6; // time in seconds
+
+        let interval = setInterval(function () {
+            timeRemaining--;
+            timerElement.textContent = timeRemaining;
+
+            if (timeRemaining <= 0) {
+                clearInterval(interval);
+                document.getElementById("hidden_redirection").click();
+            }
+        }, 1000); // 1000 milliseconds = 1 second
+    });
+</script>
+
+{% endblock index %}

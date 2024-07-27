@@ -3,7 +3,15 @@
 
 {% block index %}
 
-
-
+<div class="container-fluid" style="padding-top: 20px;">
+    <div class="row">
+        <h3>The Query Form</h3>
+        <form class="mt-3" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="submit-form" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
 
 {% endblock index %}

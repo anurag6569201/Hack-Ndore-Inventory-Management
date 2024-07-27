@@ -3,3 +3,9 @@ whitenoise
 pillow
 django-jazzmin
 django-import-export
+langchain
+langchain-google-genai 
+langchain-community
+chromadb
+pypdf
+schedule

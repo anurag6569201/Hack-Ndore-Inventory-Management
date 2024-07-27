@@ -70,3 +70,73 @@
     margin-top: 1em;
     margin-left: 1em;
 }
+
+/* form css */
+h1 {
+    color: #333;
+}
+.submit-form{
+    text-decoration: none;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #236aa9;
+    font-weight: 600;
+    cursor: pointer;
+}
+#id_name,
+#id_description,
+#id_image,
+#id_seriousness,
+#id_problem_type{
+    text-decoration: none;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #236aa9;
+    font-weight: 600;
+    width: 100%;
+}
+.submit-form:hover,
+#id_name:hover,
+#id_description:hover,
+#id_image:hover,
+#id_seriousness:hover,
+#id_problem_type:hover{
+    background-color: #236aa9;
+    color: white;
+}
+
+.back_to_list{
+    margin-top: 10px;
+}
+
+/* form submission css */
+#id_model,
+#id_serial_number,
+#id_condition,
+#id_location,
+#id_purchase_date,
+#id_last_service_date,
+#id_next_service_due,
+#id_type,
+#id_make{
+    border: 1px solid grey;
+    width: 100%;
+    color: grey;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.form-img-div{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.form-img{
+    position: sticky;
+    top: 25vh;
+    width: 20em;
+}
