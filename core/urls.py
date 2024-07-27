@@ -9,4 +9,7 @@ urlpatterns=[
     path("userhome/",views.user_index,name="user_index"),
     path("success/",views.user_form_success,name="user_form_success"),
     path('send-message/', views.send_message, name='send_message'),
+
+    # queries
+    path('query/', views.query, name='query'),
 ]

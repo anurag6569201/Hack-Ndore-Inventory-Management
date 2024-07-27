@@ -6,8 +6,7 @@ from core.forms import ProblemForm
 from django.views.decorators.csrf import csrf_exempt
 import json
 from core.LLM_Model.test import get_response
-from langchain.prompts import ChatPromptTemplate
-
+from core.models import Problem
 @login_required
 def check(request):
     return redirect("core:user_index")
@@ -49,3 +48,10 @@ def send_message(request):
             return JsonResponse({"reply": response_message})
         return JsonResponse({"reply": "I didn't understand that. Could you please rephrase?"})
     return JsonResponse({"error": "Invalid request method."}, status=405)
+
+def query(request):
+    public_problem=Problem.objects.all()
+    context={
+        'public_problem':public_problem
+    }
+    return render(request,'core/app/queries.html',context)

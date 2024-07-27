@@ -1,0 +1,13 @@
+{% extends 'core/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+
+<div class="container-fluid" style="padding-top: 20px;">
+    <div class="row">
+        <h4>Public Queries</h4>
+        {{public_problem}}
+    </div>
+</div>
+
+{% endblock index %}
