@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'CustomFont';
-    src: url('../fonts/Gazpacho.ttf') format('truetype');
+    src: url('../') format('truetype');
 }
 /* navbar */
 .navbar{

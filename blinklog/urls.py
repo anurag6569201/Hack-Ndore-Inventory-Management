@@ -28,6 +28,7 @@ urlpatterns = [
 
     # custom apps
     path('assets_manage/',include('assets_manage.urls')),
+    path('maintain/',include('maintain.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

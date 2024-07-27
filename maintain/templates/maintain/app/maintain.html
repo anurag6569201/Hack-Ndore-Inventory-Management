@@ -1,0 +1,56 @@
+{% extends 'maintain/partial/base.html' %}
+{% load static %}
+{% block index %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="vehicle_para">
+                <h3>Automated Reminders</h3>
+                <p>Set up automated reminders for routine maintenance tasks. Schedule periodic checks and alerts to ensure timely maintenance.</p>
+                <a class="view_list" href="">View Reminders</a>
+            </div>
+        </div>
+        <div class="col-md-6 vehicle_para_img p-0" style="justify-content: center;">
+            <img height="200px" src="../../../static/maintain/image/mail.svg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 vehicle_para_img p-0" style="justify-content: center;">
+            <img height="200px" src="../../../static/maintain/image/repair.svg" alt="">
+        </div>
+        <div class="col-md-6">
+            <div class="vehicle_para">
+                <h3>Log Repair Activities</h3>
+                <p>Track all repair activities including costs and downtime.Maintain records of repairs to monitor asset performance and costs.</p>
+                <a class="view_list" href="">View Activities</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="vehicle_para">
+                <h3>Maintain Service History</h3>
+                <p>Keep a detailed history of all maintenance and repairs performed on each asset.Access historical data for analysis and decision-making.</p>
+                <a class="view_list" href="">View History</a>
+            </div>
+        </div>
+        <div class="col-md-6 vehicle_para_img p-0" style="justify-content: center;">
+            <img height="170px" src="../../../static/maintain/image/history.svg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 vehicle_para_img p-0" style="justify-content: center;">
+            <img height="170px" src="../../../static/maintain/image/manage.svg" alt="">
+        </div>
+        <div class="col-md-6">
+            <div class="vehicle_para">
+                <h3>Manage Inventory</h3>
+                <p>Track and manage inventory of equipment and parts.Monitor stock levels and manage orders to ensure availability.</p>
+                <a class="view_list" href="">View Inventory</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock index %}

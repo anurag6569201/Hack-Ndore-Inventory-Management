@@ -1,0 +1,21 @@
+.view_list{
+    text-decoration: none;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #236aa9;
+    font-weight: 600;
+}
+.view_list:hover{
+    background-color: #236aa9;
+    color: white;
+}
+.vehicle_para{
+    padding: 20px;
+}
+.vehicle_para_img{
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+}
