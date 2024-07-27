@@ -1,3 +1,4 @@
+
 #page-content{
     display: none;
     position: fixed;
@@ -125,6 +126,7 @@
     padding: 10px;
     height: 70vh;
     overflow: auto;
+    color: #515151 !important;
 }
 
 .direct-chat-messages, .direct-chat-contacts {
@@ -143,6 +145,7 @@
 .direct-chat-msg, .direct-chat-text {
     display: block;
     font-size: .9em;
+    color: #515151 !important;
 }
 
 .direct-chat-info {
@@ -238,12 +241,13 @@
 .direct-chat-warning .right>.direct-chat-text {
     background: #f7f1ed;
     border-color: #f7f1ed;
-    color: #fff;
+    color: #515151;
 }
 
 .right .direct-chat-text {
     margin-right: 50px;
     margin-left: 0;
+    color: #515151 !important;
 }
 
 .box-footer {
@@ -274,7 +278,7 @@
 }
 
 .btn-warning {
-    color: #fff;
+    color: #fff !important;
     background-color: black;
     border-color: black;
 } 
@@ -293,6 +297,6 @@
 
 .btn-warning:hover{
     background-color: #f7f1ed;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0) !important;
     border: 1px solid #113529;
 }
