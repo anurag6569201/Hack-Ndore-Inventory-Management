@@ -1,0 +1,51 @@
+id,name,role,department,status,last_updated
+50,Sunil Patel,Security Guard,Security,Active,2024-07-01
+49,Dr. Arti Sinha,Allergist,Allergy,On Leave,2024-07-01
+48,Neeraj Sharma,Nurse,ICU,Active,2024-07-01
+47,Dr. Jyoti Gupta,Pathologist,Pathology,Active,2024-07-01
+46,Shweta Joshi,Administrative Staff,IT,Active,2024-07-01
+45,Dr. Pradeep Mehta,Plastic Surgeon,Plastic Surgery,Active,2024-07-01
+44,Ajay Yadav,Janitor,Maintenance,Active,2024-07-01
+43,Dr. Vikas Kumar,Rheumatologist,Rheumatology,On Leave,2024-07-01
+42,Sangeeta Sharma,Nurse,Emergency Room,Active,2024-07-01
+41,Dr. Shalini Verma,Internal Medicine Specialist,Internal Medicine,Active,2024-07-01
+40,Deepak Kumar,Security Guard,Security,Active,2024-07-01
+39,Dr. Nitin Patel,Neurosurgeon,Neurosurgery,Active,2024-07-01
+38,Sunita Yadav,Receptionist,Front Desk,Active,2024-07-01
+37,Dr. Mohan Rao,Gastroenterologist,Gastroenterology,On Leave,2024-07-01
+36,Pooja Rawat,Nurse,General Ward,Active,2024-07-01
+35,Dr. Ritu Mehta,Emergency Medicine Specialist,Emergency Room,Active,2024-07-01
+34,Ravi Sharma,Lab Technician,Chemistry,Active,2024-07-01
+33,Dr. Neeraj Gupta,Cardiothoracic Surgeon,Cardiothoracic Surgery,Active,2024-07-01
+32,Rajesh Kumar,Nurse,ICU,Active,2024-07-01
+31,Dr. Vikram Singh,Endocrinologist,Endocrinology,Active,2024-07-01
+30,Seema Patel,Administrative Staff,Finance,Active,2024-07-01
+29,Dr. Asha Sinha,Neurologist,Neurology,On Leave,2024-07-01
+28,Anil Kumar,Janitor,Maintenance,Active,2024-07-01
+27,Dr. Swati Singh,Radiologist,Radiology,Active,2024-07-01
+26,Neha Joshi,Receptionist,Front Desk,Active,2024-07-01
+25,Dr. Deepak Kumar,Oncologist,Oncology,Active,2024-07-01
+24,Suresh Choudhury,Security Guard,Security,Active,2024-07-01
+23,Dr. Vinod Patel,Nephrologist,Nephrology,On Leave,2024-07-01
+22,Ritu Sharma,Nurse,Emergency Room,Active,2024-07-01
+21,Dr. Meenal Gupta,Anesthesiologist,Anesthesia,Active,2024-07-01
+20,Ajay Mishra,Administrative Staff,HR,Active,2024-07-01
+19,Dr. Ramesh Chandra,ENT Specialist,ENT,Active,2024-07-01
+18,Simran Kaur,Lab Technician,Microbiology,Active,2024-07-01
+17,Dr. Arvind Mishra,Urologist,Urology,On Leave,2024-07-01
+16,Radha Sharma,Nurse,General Ward,Active,2024-07-01
+15,Dr. Kavita Rao,Gynecologist,Obstetrics & Gynecology,Active,2024-07-01
+14,Sunil Kumar,Janitor,Maintenance,Active,2024-07-01
+13,Dr. Vikas Yadav,Pediatrician,Pediatrics,Active,2024-07-01
+12,Meera Patel,Receptionist,Front Desk,Active,2024-07-01
+11,Dr. Pooja Singh,Cardiologist,Cardiology,On Leave,2024-07-01
+10,Rajiv Singh,Security Guard,Security,Active,2024-07-01
+9,Preeti Joshi,Nurse,ICU,Active,2024-07-01
+8,Dr. Manoj Verma,Orthopedic Surgeon,Orthopedics,Active,2024-07-01
+7,Nisha Rawat,Administrative Staff,Administration,Active,2024-07-01
+6,Ajay Kumar,Lab Technician,Pathology,Active,2024-07-01
+5,Dr. Sunita Mehta,Intern,Emergency Room,Active,2024-07-01
+4,Anita Deshmukh,Pharmacist,Pharmacy,Active,2024-07-01
+3,Dr. Rajesh Gupta,Surgeon,Surgical Department,On Leave,2024-07-01
+2,Nurse Ravi Patel,Nurse,General Ward,Active,2024-07-01
+1,Dr. Aarti Sharma,Physician,Emergency Room,Active,2024-07-01

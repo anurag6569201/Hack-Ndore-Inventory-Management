@@ -1,0 +1,51 @@
+id,location,capacity_liters,available,condition,last_checked
+50,Agar Malwa District Hospital,3500,3300,Fair,2024-07-01
+49,Barwani Medical Center,3000,2800,Good,2024-07-01
+48,Alirajpur District Hospital,2500,2200,Fair,2024-07-01
+47,Mandla Medical Center,4500,4300,Good,2024-07-01
+46,Khargone Medical Center,2000,1800,Fair,2024-07-01
+45,Datia Medical Center,3000,2900,Good,2024-07-01
+44,Sehore District Hospital,3500,3300,Fair,2024-07-01
+43,Rewa Government Hospital,5500,5300,Good,2024-07-01
+42,Satna Medical College,4000,3700,Fair,2024-07-01
+41,Chhindwara District Hospital,3000,2700,Good,2024-07-01
+40,Khandwa General Hospital,4500,4200,Fair,2024-07-01
+39,Shivpuri Medical Center,4000,3800,Good,2024-07-01
+38,Morena General Hospital,3500,3300,Fair,2024-07-01
+37,Itarsi Medical Center,6000,5900,Good,2024-07-01
+36,Dhar Government Hospital,2500,2300,Fair,2024-07-01
+35,Sidhi District Hospital,3000,2800,Good,2024-07-01
+34,Guna General Hospital,4500,4200,Fair,2024-07-01
+33,Jabalpur Medical Center,3500,3300,Good,2024-07-01
+32,Rewa Medical College,5500,5200,Fair,2024-07-01
+31,Umaria Medical Center,4000,3700,Good,2024-07-01
+30,Koriya Government Hospital,3500,3200,Good,2024-07-01
+29,Seoni District Hospital,3000,2800,Fair,2024-07-01
+28,Mandsaur Hospital,4500,4200,Good,2024-07-01
+27,Shahdol Medical Center,2000,1900,Fair,2024-07-01
+26,Chhatarpur Medical College,6000,5700,Good,2024-07-01
+25,Barwani Government Hospital,3500,3300,Good,2024-07-01
+24,Anuppur District Hospital,2500,2300,Fair,2024-07-01
+23,Panna General Hospital,3000,2900,Good,2024-07-01
+22,Agar Malwa Medical Center,5000,4800,Fair,2024-07-01
+21,Alirajpur Hospital,2000,1800,Good,2024-07-01
+20,Shivpuri District Hospital,4000,3700,Good,2024-07-01
+19,Niwari Medical Center,3500,3200,Fair,2024-07-01
+18,Mandla Government Hospital,4500,4200,Good,2024-07-01
+17,Datia District Hospital,3000,2800,Fair,2024-07-01
+16,Malwa Medical Center,6000,5800,Good,2024-07-01
+15,Betul Hospital,2500,2200,Good,2024-07-01
+14,Khargone Government Hospital,4000,3700,Fair,2024-07-01
+13,Sehore Medical College,5000,4800,Good,2024-07-01
+12,Damoh District Hospital,3500,3300,Good,2024-07-01
+11,Shahdol General Hospital,3000,2700,Good,2024-07-01
+10,Chhindwara Medical Center,4000,3800,Fair,2024-07-01
+9,Khandwa Hospital,2500,2300,Good,2024-07-01
+8,Rewa Government Hospital,5000,4700,Fair,2024-07-01
+7,Sagar District Hospital,3500,3200,Good,2024-07-01
+6,Ujjain Medical College,4500,4000,Good,2024-07-01
+5,Satna Government Hospital,3000,2800,Fair,2024-07-01
+4,Gwalior General Hospital,7000,6500,Good,2024-07-01
+3,Jabalpur District Hospital,4000,3500,Good,2024-07-01
+2,Bhopal Medical Center,6000,5500,Fair,2024-07-01
+1,Indore Hospital,5000,4500,Good,2024-07-01

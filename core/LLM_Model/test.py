@@ -28,7 +28,7 @@ vectordb=Chroma(persist_directory=persist_directory,embedding_function=embedding
 
 retriver=vectordb.as_retriever()
 
-llm_model=ChatGoogleGenerativeAI(model="models/gemini-1.5-flash-latest",google_api_key=google_gemini_api)
+llm_model=ChatGoogleGenerativeAI(model="gemini-pro",google_api_key=google_gemini_api)
 
 system_prompt = (
     "You have an expertise on Muncipal corporation and you are well aware about the Muncipal Corporation Indore and You have all the information regarding the Indore"
@@ -75,3 +75,6 @@ def get_response(query):
         return answer
     except Exception as e:
         return "Sorry, I couldn't process your request."
+
+query="checking"
+get_response(query)

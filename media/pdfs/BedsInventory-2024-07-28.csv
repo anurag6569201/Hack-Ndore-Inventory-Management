@@ -1,0 +1,51 @@
+id,location,capacity,available,condition,last_checked
+50,Agar Malwa District Hospital,100,85,Fair,2024-07-01
+49,Barwani Medical Center,90,80,Good,2024-07-01
+48,Alirajpur District Hospital,85,70,Fair,2024-07-01
+47,Mandla Medical Center,120,105,Good,2024-07-01
+46,Khargone Medical Center,75,60,Fair,2024-07-01
+45,Datia Medical Center,95,80,Good,2024-07-01
+44,Sehore District Hospital,100,85,Fair,2024-07-01
+43,Rewa Government Hospital,130,120,Good,2024-07-01
+42,Satna Medical College,110,95,Fair,2024-07-01
+41,Chhindwara District Hospital,85,75,Good,2024-07-01
+40,Khandwa General Hospital,120,100,Fair,2024-07-01
+39,Shivpuri Medical Center,100,90,Good,2024-07-01
+38,Morena General Hospital,95,85,Fair,2024-07-01
+37,Itarsi Medical Center,150,140,Good,2024-07-01
+36,Dhar Government Hospital,75,65,Fair,2024-07-01
+35,Sidhi District Hospital,80,70,Good,2024-07-01
+34,Guna General Hospital,110,95,Fair,2024-07-01
+33,Jabalpur Medical Center,95,85,Good,2024-07-01
+32,Rewa Medical College,130,120,Fair,2024-07-01
+31,Umaria Medical Center,100,85,Good,2024-07-01
+30,Koriya Government Hospital,85,75,Good,2024-07-01
+29,Seoni District Hospital,90,80,Fair,2024-07-01
+28,Mandsaur Hospital,120,110,Good,2024-07-01
+27,Shahdol Medical Center,75,65,Fair,2024-07-01
+26,Chhatarpur Medical College,150,135,Good,2024-07-01
+25,Barwani Government Hospital,100,85,Good,2024-07-01
+24,Anuppur District Hospital,80,70,Fair,2024-07-01
+23,Panna General Hospital,90,80,Good,2024-07-01
+22,Agar Malwa Medical Center,130,110,Fair,2024-07-01
+21,Alirajpur Hospital,70,60,Good,2024-07-01
+20,Shivpuri District Hospital,120,100,Good,2024-07-01
+19,Niwari Medical Center,95,85,Fair,2024-07-01
+18,Mandla Government Hospital,110,100,Good,2024-07-01
+17,Datia District Hospital,85,75,Fair,2024-07-01
+16,Malwa Medical Center,200,180,Good,2024-07-01
+15,Betul Hospital,75,60,Good,2024-07-01
+14,Khargone Government Hospital,100,85,Fair,2024-07-01
+13,Sehore Medical College,150,130,Good,2024-07-01
+12,Damoh District Hospital,95,85,Good,2024-07-01
+11,Shahdol General Hospital,85,70,Good,2024-07-01
+10,Chhindwara Medical Center,130,115,Fair,2024-07-01
+9,Khandwa Hospital,70,65,Good,2024-07-01
+8,Rewa Government Hospital,110,95,Fair,2024-07-01
+7,Sagar District Hospital,90,75,Good,2024-07-01
+6,Ujjain Medical College,120,100,Good,2024-07-01
+5,Satna Government Hospital,80,70,Fair,2024-07-01
+4,Gwalior General Hospital,180,160,Good,2024-07-01
+3,Jabalpur District Hospital,100,90,Good,2024-07-01
+2,Bhopal Medical Center,200,180,Fair,2024-07-01
+1,Indore Hospital,150,120,Good,2024-07-01

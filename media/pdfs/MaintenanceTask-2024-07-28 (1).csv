@@ -1,0 +1,21 @@
+id,machinery,hours_of_operation,description,status,due_date
+20,Dump Truck,1600,Brake system check.,g,2024-09-10 09:45:00
+19,Loader,700,General inspection.,N,2024-09-08 15:00:00
+18,Crane,4900,Maintenance and calibration.,g,2024-09-05 12:30:00
+17,Bulldozer,400,Hydraulic fluid change.,N,2024-09-02 13:00:00
+16,Excavator,300,Engine repair.,g,2024-08-30 10:15:00
+15,Dump Truck,1800,Tire replacement.,N,2024-08-28 08:00:00
+14,Loader,600,Coolant system service.,g,2024-08-25 11:30:00
+13,Crane,4800,Electrical system check.,N,2024-08-22 14:10:00
+12,Bulldozer,350,Filter change.,g,2024-08-20 15:00:00
+11,Excavator,250,Undercarriage inspection.,N,2024-08-17 09:50:00
+10,Dump Truck,2200,Exhaust system repair.,g,2024-08-15 12:00:00
+9,Loader,800,Transmission service.,N,2024-08-12 10:40:00
+8,Crane,4200,Structural inspection.,g,2024-08-09 16:00:00
+7,Bulldozer,300,Engine tune-up.,N,2024-08-07 08:10:00
+6,Excavator,200,Hydraulic system check.,g,2024-08-05 13:25:00
+5,Dump Truck,1500,Brake inspection.,N,2024-08-03 14:20:00
+4,Loader,450,General maintenance.,g,2024-08-01 11:30:00
+3,Crane,5000,Complete overhaul.,N,2024-07-30 09:00:00
+2,Bulldozer,350,Oil change and filter replacement.,g,2024-07-29 10:15:00
+1,Excavator,120,Routine maintenance check.,N,2024-07-28 01:37:17

@@ -15,9 +15,14 @@ def getting_chunks_csv():
         if filename.endswith('.csv'):
             file_path = os.path.join(csvs_directory, filename)
             df = pd.read_csv(file_path)
-
+            
+            # Convert DataFrame to a single text string
             text = df.to_string(index=False)
+            
+            # Initialize the text splitter
             text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+            
+            # Split the text into chunks
             chunks = text_splitter.split_text(text)
             
             # Convert text chunks to Document objects
