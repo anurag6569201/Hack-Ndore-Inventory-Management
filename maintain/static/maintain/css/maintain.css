@@ -19,3 +19,59 @@
     justify-content: right;
     align-items: baseline;
 }
+
+/* timeline css */
+/* Add this to your CSS file */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3498db;
+}
+
+.timeline-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #3498db;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    margin-right: 15px;
+}
+
+.timeline-content {
+    display: inline-block;
+    vertical-align: top;
+    max-width: calc(100% - 70px);
+}
+
+.timeline-content h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+}

@@ -1,0 +1,78 @@
+{% extends 'maintain/partial/base.html' %}
+{% load static %}
+{% block index %}
+<!-- Reminders Section -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="vehicle_para">
+            <h3>Today's Tasks</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Machinery</th>
+                        <th>Hours of Operation</th>
+                        <th>Description</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for task in maintenance_tasks %}
+                    <tr>
+                        <td>{{ task.machinery }}</td>
+                        <td>{{ task.hours_of_operation }}</td>
+                        <td>{{ task.description }}</td>
+                        <td>{{ task.due_date }}</td>
+                        <td>
+                            {% if task.status == 'N' %}
+                                <span class="text-warning">Needs Attention</span>
+                            {% elif task.status == 'g' %}
+                                <span class="text-success">Good Condition</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="4">No upcoming tasks.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <h3>Upcoming Maintenance Tasks</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Machinery</th>
+                        <th>Hours of Operation</th>
+                        <th>Description</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for task in future_tasks %}
+                    <tr>
+                        <td>{{ task.machinery }}</td>
+                        <td>{{ task.hours_of_operation }}</td>
+                        <td>{{ task.description }}</td>
+                        <td>{{ task.due_date }}</td>
+                        <td>
+                            {% if task.status == 'N' %}
+                                <span class="text-warning">Needs Attention</span>
+                            {% elif task.status == 'g' %}
+                                <span class="text-success">Good Condition</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="4">No upcoming tasks.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock index %}

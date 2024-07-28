@@ -8,7 +8,7 @@
             <div class="vehicle_para">
                 <h3>Automated Reminders</h3>
                 <p>Set up automated reminders for routine maintenance tasks. Schedule periodic checks and alerts to ensure timely maintenance.</p>
-                <a class="view_list" href="">View Reminders</a>
+                <a class="view_list" href="{% url 'maintain:remainder' %}">View Reminders</a>
             </div>
         </div>
         <div class="col-md-6 vehicle_para_img p-0" style="justify-content: center;">
@@ -23,7 +23,7 @@
             <div class="vehicle_para">
                 <h3>Log Repair Activities</h3>
                 <p>Track all repair activities including costs and downtime.Maintain records of repairs to monitor asset performance and costs.</p>
-                <a class="view_list" href="">View Activities</a>
+                <a class="view_list" href="{% url 'maintain:repair' %}">View Activities</a>
             </div>
         </div>
     </div>
