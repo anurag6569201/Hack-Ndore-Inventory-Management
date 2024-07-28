@@ -1,11 +1,51 @@
-id,type,make,model,serial_number,condition,current_location,last_known_location,latitude,longitude,location_history,operational_status
-1,Excavator,Caterpillar,320D,CAT320D123456,Good,Bhopal,Indore,"23.2599","77.4126","[{""location"": ""Indore"", ""timestamp"": ""2024-01-10T12:00:00Z""}, {""location"": ""Bhopal"", ""timestamp"": ""2024-01-05T08:00:00Z""}]",Operational
-2,Bulldozer,Komatsu,D65EX-18,KOMD6589123,Excellent,Indore,Gwalior,"22.7196","75.8577","[{""location"": ""Gwalior"", ""timestamp"": ""2024-01-15T09:00:00Z""}, {""location"": ""Indore"", ""timestamp"": ""2023-12-30T14:00:00Z""}]",Under Repair
-3,Garbage Truck,Tata,ACE,TATAACE987654,Average,Gwalior,Jabalpur,"26.2186","78.1828","[{""location"": ""Jabalpur"", ""timestamp"": ""2024-01-20T10:00:00Z""}, {""location"": ""Gwalior"", ""timestamp"": ""2024-01-10T07:00:00Z""}]",Operational
-4,Bus,Mercedes-Benz,OC 500 RF,MB1234567890,Good,Jabalpur,Ujjain,"23.1762","79.9864","[{""location"": ""Ujjain"", ""timestamp"": ""2024-01-25T11:00:00Z""}, {""location"": ""Jabalpur"", ""timestamp"": ""2024-01-15T15:00:00Z""}]",Operational
-5,Excavator,John Deere,460E,JDC460123456,Fair,Ujjain,Bhopal,"23.1762","79.9864","[{""location"": ""Bhopal"", ""timestamp"": ""2024-02-01T12:00:00Z""}, {""location"": ""Ujjain"", ""timestamp"": ""2024-01-25T09:00:00Z""}]",Decommissioned
-6,Dumper,Komatsu,HD785,KMHD7856789,Operational,Sagar,Khargone,"23.8314","78.5665","[{""location"": ""Khargone"", ""timestamp"": ""2024-02-05T10:00:00Z""}, {""location"": ""Sagar"", ""timestamp"": ""2024-01-30T08:00:00Z""}]",Operational
-7,Crane,Tadano,TR-100,TADTR1001234,Good,Khargone,Indore,"22.7196","75.8577","[{""location"": ""Indore"", ""timestamp"": ""2024-02-10T13:00:00Z""}, {""location"": ""Khargone"", ""timestamp"": ""2024-01-25T14:00:00Z""}]",Operational
-8,Loader,Case,570N,CASE570N1234,Excellent,Morena,Chhindwara,"23.2021","79.9371","[{""location"": ""Chhindwara"", ""timestamp"": ""2024-02-15T11:00:00Z""}, {""location"": ""Morena"", ""timestamp"": ""2024-01-15T09:00:00Z""}]",Operational
-9,Tractor,Mahindra,404,MAH4041234,Good,Chhindwara,Satna,"24.4590","81.6286","[{""location"": ""Satna"", ""timestamp"": ""2024-02-20T15:00:00Z""}, {""location"": ""Chhindwara"", ""timestamp"": ""2024-01-25T10:00:00Z""}]",Under Repair
-10,Excavator,Liebherr,R914,LIEB9141234,Fair,Satna,Ujjain,"23.1762","79.9864","[{""location"": ""Ujjain"", ""timestamp"": ""2024-03-01T12:00:00Z""}, {""location"": ""Satna"", ""timestamp"": ""2024-02-20T08:00:00Z""}]",Decommissioned
+id,registration_number,type,available,condition,last_maintenance
+1,MP01AB1234,Standard,True,Good,2024-06-15
+2,MP02CD5678,Advanced Life Support,True,Good,2024-07-01
+3,MP03EF9101,Standard,False,Needs Repair,2024-06-20
+4,MP04GH2345,Advanced Life Support,True,Good,2024-07-05
+5,MP05IJ6789,Standard,True,Good,2024-06-25
+6,MP06KL0123,Advanced Life Support,False,Needs Repair,2024-06-30
+7,MP07MN4567,Standard,True,Good,2024-07-01
+8,MP08OP8901,Advanced Life Support,True,Good,2024-07-10
+9,MP09QR2345,Standard,True,Needs Repair,2024-06-22
+10,MP10ST6789,Advanced Life Support,True,Good,2024-07-03
+11,MP11UV0123,Standard,False,Needs Repair,2024-06-28
+12,MP12WX4567,Advanced Life Support,True,Good,2024-07-12
+13,MP13YZ8901,Standard,True,Good,2024-07-08
+14,MP14AB2345,Advanced Life Support,True,Good,2024-07-04
+15,MP15CD6789,Standard,True,Needs Repair,2024-06-26
+16,MP16EF0123,Advanced Life Support,True,Good,2024-07-09
+17,MP17GH4567,Standard,False,Needs Repair,2024-07-02
+18,MP18IJ8901,Advanced Life Support,True,Good,2024-07-07
+19,MP19KL2345,Standard,True,Good,2024-06-29
+20,MP20MN6789,Advanced Life Support,True,Needs Repair,2024-07-11
+21,MP21OP0123,Standard,True,Good,2024-06-24
+22,MP22QR4567,Advanced Life Support,False,Needs Repair,2024-07-06
+23,MP23ST8901,Standard,True,Good,2024-07-02
+24,MP24UV2345,Advanced Life Support,True,Good,2024-07-08
+25,MP25WX6789,Standard,False,Needs Repair,2024-07-10
+26,MP26YZ0123,Advanced Life Support,True,Good,2024-07-12
+27,MP27AB4567,Standard,True,Good,2024-06-23
+28,MP28CD8901,Advanced Life Support,True,Needs Repair,2024-07-01
+29,MP29EF2345,Standard,True,Good,2024-07-05
+30,MP30GH6789,Advanced Life Support,True,Good,2024-07-07
+31,MP31IJ0123,Standard,False,Needs Repair,2024-07-03
+32,MP32KL4567,Advanced Life Support,True,Good,2024-07-09
+33,MP33MN8901,Standard,True,Good,2024-06-27
+34,MP34OP2345,Advanced Life Support,True,Needs Repair,2024-07-11
+35,MP35QR6789,Standard,True,Good,2024-06-28
+36,MP36ST0123,Advanced Life Support,False,Needs Repair,2024-07-12
+37,MP37UV4567,Standard,True,Good,2024-07-01
+38,MP38WX8901,Advanced Life Support,True,Good,2024-07-10
+39,MP39YZ2345,Standard,False,Needs Repair,2024-06-30
+40,MP40AB6789,Advanced Life Support,True,Good,2024-07-08
+41,MP41CD0123,Standard,True,Good,2024-07-05
+42,MP42EF4567,Advanced Life Support,False,Needs Repair,2024-07-01
+43,MP43GH8901,Standard,True,Good,2024-06-29
+44,MP44IJ2345,Advanced Life Support,True,Good,2024-07-11
+45,MP45KL6789,Standard,True,Needs Repair,2024-06-27
+46,MP46MN0123,Advanced Life Support,True,Good,2024-07-03
+47,MP47OP4567,Standard,False,Needs Repair,2024-06-25
+48,MP48QR8901,Advanced Life Support,True,Good,2024-07-12
+49,MP49ST2345,Standard,True,Good,2024-07-07
+50,MP50UV6789,Advanced Life Support,True,Needs Repair,2024-07-10

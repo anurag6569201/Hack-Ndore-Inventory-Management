@@ -84,6 +84,7 @@
 .feature a{
     text-decoration: none;
 }
+.feature-content-odd:hover,
 .feature-content:hover{
     text-decoration: none;
     -webkit-box-shadow: 7px 7px 46px -3px rgba(0,0,0,0.75);
@@ -225,4 +226,17 @@ tr:nth-child(even) {
 
 tr:hover {
     background-color: #ddd;
+}
+.add_vehicle{
+    text-decoration: none;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #236aa9;
+    font-weight: 600;
+}
+.add_vehicle:hover{
+    background-color: #236aa9;
+    color: white;
 }

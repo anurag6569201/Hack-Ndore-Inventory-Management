@@ -5,6 +5,7 @@
 
 <div class="container">
     <h1>Ambulances Inventory</h1>
+    <a class="add_vehicle" href="#">Add New Ambulance</a>
     <table>
         <thead>
             <tr>
@@ -17,30 +18,16 @@
             </tr>
         </thead>
         <tbody>
+            {% for ambu in health_ambu %}
             <tr>
-                <td>1</td>
-                <td>AB123CD</td>
-                <td>Basic</td>
-                <td>Yes</td>
-                <td>Good</td>
-                <td>2024-07-20</td>
+                <td>{{ ambu.id }}</td>
+                <td>{{ ambu.registration_number }}</td>
+                <td>{{ ambu.type }}</td>
+                <td>{{ ambu.available }}</td>
+                <td>{{ ambu.condition }}</td>
+                <td>{{ ambu.last_maintenance }}</td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>EF456GH</td>
-                <td>Advanced</td>
-                <td>No</td>
-                <td>Needs Maintenance</td>
-                <td>2024-07-15</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>IJ789KL</td>
-                <td>Basic</td>
-                <td>Yes</td>
-                <td>Good</td>
-                <td>2024-07-18</td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </div>

@@ -10,7 +10,4 @@ chromadb
 pypdf
 schedule
 pandas
-huggingface_hub
-transformers
-accelerate
-bitsandbytes
+twilio

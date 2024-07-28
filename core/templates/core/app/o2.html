@@ -5,6 +5,7 @@
 
 <div class="container">
     <h1>Oxygen Cylinders Inventory</h1>
+    <a class="add_vehicle" href="#">Add Oxygen Cylinders</a>
     <table>
         <thead>
             <tr>
@@ -17,31 +18,17 @@
             </tr>
         </thead>
         <tbody>
+            {% for o in health_o2 %}
             <tr>
-                <td>1</td>
-                <td>Storage Room 1</td>
-                <td>10</td>
-                <td>8</td>
-                <td>Good</td>
-                <td>2024-07-25</td>
+                <td>{{ o.id }}</td>
+                <td>{{ o.location }}</td>
+                <td>{{ o.capacity_liters }}</td>
+                <td>{{ o.available }}</td>
+                <td>{{ o.condition }}</td>
+                <td>{{ o.last_checked }}</td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>Storage Room 2</td>
-                <td>15</td>
-                <td>14</td>
-                <td>Good</td>
-                <td>2024-07-25</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Emergency Room</td>
-                <td>5</td>
-                <td>3</td>
-                <td>Needs Replacement</td>
-                <td>2024-07-25</td>
-            </tr>
+            {% endfor %}
         </tbody>
-    </table>
+    </table>    
 </div>
 {% endblock index %}

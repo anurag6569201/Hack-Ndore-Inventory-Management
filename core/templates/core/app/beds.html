@@ -5,6 +5,7 @@
 
 <div class="container">
     <h1>Beds Inventory</h1>
+    <a class="add_vehicle" href="#">Add New Beds</a>
     <table>
         <thead>
             <tr>
@@ -17,30 +18,16 @@
             </tr>
         </thead>
         <tbody>
+            {% for bed in health_bed %}
             <tr>
-                <td>1</td>
-                <td>Ward A</td>
-                <td>10</td>
-                <td>8</td>
-                <td>Good</td>
-                <td>2024-07-26</td>
+                <td>{{ bed.id }}</td>
+                <td>{{ bed.location }}</td>
+                <td>{{ bed.capacity }}</td>
+                <td>{{ bed.available }}</td>
+                <td>{{ bed.condition }}</td>
+                <td>{{ bed.last_checked }}</td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>Ward B</td>
-                <td>15</td>
-                <td>12</td>
-                <td>Good</td>
-                <td>2024-07-26</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>ICU</td>
-                <td>5</td>
-                <td>3</td>
-                <td>Excellent</td>
-                <td>2024-07-26</td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </div>

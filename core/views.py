@@ -6,7 +6,7 @@ from core.forms import ProblemForm
 from django.views.decorators.csrf import csrf_exempt
 import json
 from core.LLM_Model.test import get_response
-from core.models import Problem
+from core.models import Problem,BedsInventory,O2Inventory,Ambulance,StaffMember
 @login_required
 def check(request):
     return redirect("core:user_index")
@@ -66,28 +66,33 @@ def health(request):
 
 @login_required
 def healthbed(request):
+    health_bed=BedsInventory.objects.all()
     context={
-
+        'health_bed':health_bed
     }
     return render(request,'core/app/beds.html',context)
 
 @login_required
 def healthambu(request):
+    health_ambu=Ambulance.objects.all()
     context={
-
+        'health_ambu':health_ambu
     }
     return render(request,'core/app/ambu.html',context)
 
 @login_required
 def healthstaff(request):
+    health_staff=StaffMember.objects.all()
     context={
-
+        'health_staff':health_staff
     }
     return render(request,'core/app/staff.html',context)
 
 @login_required
 def healtho2(request):
+    health_o2=O2Inventory.objects.all()
     context={
-
+        'health_o2':health_o2
     }
     return render(request,'core/app/o2.html',context)
+

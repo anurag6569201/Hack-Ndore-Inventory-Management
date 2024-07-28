@@ -33,3 +33,49 @@ class Problem(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class BedsInventory(models.Model):
+    id = models.AutoField(primary_key=True)
+    location = models.CharField(max_length=255)
+    capacity = models.IntegerField()
+    available = models.IntegerField()
+    condition = models.CharField(max_length=255)
+    last_checked = models.DateField()
+
+    def __str__(self):
+        return f"ID: {self.id} - Location: {self.location}"
+    
+
+class O2Inventory(models.Model):
+    id = models.AutoField(primary_key=True)
+    location = models.CharField(max_length=255)
+    capacity_liters = models.IntegerField()
+    available = models.IntegerField()
+    condition = models.CharField(max_length=255)
+    last_checked = models.DateField()
+
+    def __str__(self):
+        return f"ID: {self.id} - Location: {self.location}"
+    
+class Ambulance(models.Model):
+    id = models.AutoField(primary_key=True)
+    registration_number = models.CharField(max_length=255, unique=True)
+    type = models.CharField(max_length=255)
+    available = models.BooleanField()
+    condition = models.CharField(max_length=255)
+    last_maintenance = models.DateField()
+
+    def __str__(self):
+        return f"ID: {self.id} - Registration Number: {self.registration_number}"
+    
+class StaffMember(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=255)
+    role = models.CharField(max_length=255)
+    department = models.CharField(max_length=255)
+    status = models.CharField(max_length=50)
+    last_updated = models.DateField()
+
+    def __str__(self):
+        return f"ID: {self.id} - Name: {self.name} - Role: {self.role}"

@@ -5,6 +5,7 @@
 
 <div class="container">
     <h1>Staff Inventory</h1>
+    <a class="add_vehicle" href="#">Add New Staff</a>
     <table>
         <thead>
             <tr>
@@ -17,32 +18,18 @@
             </tr>
         </thead>
         <tbody>
+            {% for staff in health_staff %}
             <tr>
-                <td>1</td>
-                <td>Dr. John Smith</td>
-                <td>Doctor</td>
-                <td>Emergency</td>
-                <td>Active</td>
-                <td>2024-07-22</td>
+                <td>{{ staff.id }}</td>
+                <td>{{ staff.name }}</td>
+                <td>{{ staff.role }}</td>
+                <td>{{ staff.department }}</td>
+                <td>{{ staff.status }}</td>
+                <td>{{ staff.last_updated }}</td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>Nurse Jane Doe</td>
-                <td>Nurse</td>
-                <td>ICU</td>
-                <td>Active</td>
-                <td>2024-07-22</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Mike Brown</td>
-                <td>Paramedic</td>
-                <td>Ambulance</td>
-                <td>On Leave</td>
-                <td>2024-07-20</td>
-            </tr>
+            {% endfor %}
         </tbody>
-    </table>
+    </table>    
 </div>
 
 {% endblock index %}

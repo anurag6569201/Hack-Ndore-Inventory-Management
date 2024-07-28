@@ -3,7 +3,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from blinklog.utils import getting_chunks_csv
 
 import os
@@ -21,7 +21,7 @@ vectordb=Chroma.from_documents(
     embedding=embedding,
     persist_directory=persist_directory
 )
-vectordb.persist()
+
 vectordb=None
 vectordb=Chroma(persist_directory=persist_directory,embedding_function=embedding)
 

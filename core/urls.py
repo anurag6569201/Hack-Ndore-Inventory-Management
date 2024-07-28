@@ -17,4 +17,6 @@ urlpatterns=[
     path('health/staff', views.healthstaff, name='healthstaff'),
     path('health/o2', views.healtho2, name='healtho2'),
     path('health/ambu', views.healthambu, name='healthambu'),
+
+    
 ]
