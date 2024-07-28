@@ -1,6 +1,6 @@
 from .models import Problem
 from django import forms
-from .models import BedsInventory, Ambulance, StaffMember, O2Inventory
+from .models import BedsInventory, Ambulance, StaffMember, O2Inventory,TaskAssignment
 
 class ProblemForm(forms.ModelForm):
     class Meta:
@@ -31,3 +31,21 @@ class O2InventoryForm(forms.ModelForm):
     class Meta:
         model = O2Inventory
         fields = '__all__'
+
+
+# attendence form
+from .models import Attendance
+
+class AttendanceForm(forms.ModelForm):
+    class Meta:
+        model = Attendance
+        fields = ['labor', 'status']
+
+# assignment list
+class TaskAssignmentForm(forms.ModelForm):
+    class Meta:
+        model = TaskAssignment
+        fields = ['labor', 'task', 'date_assigned', 'status']
+        widgets = {
+            'date_assigned': forms.DateInput(attrs={'type': 'date'}),
+        }

@@ -18,5 +18,11 @@ urlpatterns=[
     path('health/o2', views.healtho2, name='healtho2'),
     path('health/ambu', views.healthambu, name='healthambu'),
 
-    
+    path('add-labor/', views.add_labor, name='add_labor'),
+    path('mark-attendance/', views.mark_attendance, name='mark_attendance'),
+    path('workforce/', views.workforce, name='workforce'),
+
+    # task
+    path('task-assignments/', views.task_assignments, name='task_assignments'),
+    path('assign-task/', views.assign_task, name='assign_task'),
 ]

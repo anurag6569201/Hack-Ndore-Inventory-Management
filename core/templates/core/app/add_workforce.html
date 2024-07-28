@@ -1,0 +1,19 @@
+{% extends 'maintain/partial/base.html' %}
+{% load static %}
+{% block index %}
+
+<div class="container">
+    <div class="col-md-12">
+        <div style="display: flex;align-items: center;justify-content: center;height: 70vh;">
+            <form method="post" style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                {% csrf_token %}
+                <h2>Add Labor</h2>
+                <img style="width: 10em;" src="../../../static/core/image/workforce.svg" alt="">
+                <input style="width: 100%;border: 1px solid grey; background-color: transparent;padding: 5px 10px;border-radius: 5px;margin-bottom: 10px;" type="text" name="name" placeholder="Enter labor name" required>
+                <button class="add_vehicle" type="submit">Add Labor</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock index %}

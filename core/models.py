@@ -79,3 +79,38 @@ class StaffMember(models.Model):
 
     def __str__(self):
         return f"ID: {self.id} - Name: {self.name} - Role: {self.role}"
+    
+
+# attendence systems
+
+class Labor(models.Model):
+    name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
+
+class Attendance(models.Model):
+    labor = models.ForeignKey(Labor, on_delete=models.CASCADE)
+    date = models.DateField()
+    status = models.CharField(max_length=10, choices=[('Present', 'Present'), ('Absent', 'Absent')])
+
+    def __str__(self):
+        return f'{self.labor} - {self.date} - {self.status}'
+    
+
+# task assign
+class Task(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.CharField(max_length=60, choices=Problem.PROBLEM_TYPE_CHOICES)
+
+    def __str__(self):
+        return self.title
+
+class TaskAssignment(models.Model):
+    labor = models.ForeignKey(Labor, on_delete=models.CASCADE)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    date_assigned = models.DateField()
+    status = models.CharField(max_length=10)  # e.g., 'Completed', 'Pending'
+
+    def __str__(self):
+        return f'{self.labor.name} - {self.task.title} - {self.date_assigned} - {self.status}'

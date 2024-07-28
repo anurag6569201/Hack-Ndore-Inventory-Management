@@ -1,0 +1,27 @@
+{% extends 'maintain/partial/base.html' %}
+{% load static %}
+{% block index %}
+<style>
+    #id_status,
+    #id_labor{
+        width: 100%;
+        border: 1px solid grey;
+        background-color: transparent;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+</style>
+<div class="container" style="min-height: 70vh;">
+    <div class="col-md-12">
+        <h2>Mark Attendance</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="add_vehicle" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+{% endblock index %}

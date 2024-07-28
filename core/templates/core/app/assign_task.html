@@ -1,0 +1,30 @@
+{% extends 'core/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+<style>
+    #id_date_assigned,
+    #id_status,
+    #id_task,
+    #id_labor{
+        width: 100%;
+        border: 1px solid grey;
+        background-color: transparent;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+</style>
+<div class="container">
+    <div class="col-md-12" style="min-height: 70vh;">
+        <h1>Assign Task</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="add_vehicle" type="submit">Assign Task</button>
+        </form>
+    </div>
+</div>
+
+{% endblock index %}

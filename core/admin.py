@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Problem,BedsInventory,O2Inventory,Ambulance,StaffMember
+from .models import Problem,BedsInventory,O2Inventory,Ambulance,StaffMember,Labor,Attendance,Task,TaskAssignment
 from import_export.admin import ImportExportModelAdmin
 
 
@@ -22,3 +22,23 @@ admin.site.register(Ambulance,AmbuAdmin)
 class StaffAdmin(ImportExportModelAdmin):
     list_display=['name','role','department']
 admin.site.register(StaffMember,StaffAdmin)
+
+
+# workforce admin
+class labourAdmin(ImportExportModelAdmin):
+    list_display=['name']
+admin.site.register(Labor,labourAdmin)
+
+class AttendenceAdmin(ImportExportModelAdmin):
+    list_display=['labor','date','status']
+admin.site.register(Attendance,AttendenceAdmin)
+
+
+# task assignment admin
+class TaskAdmin(ImportExportModelAdmin):
+    list_display=['title','description']
+admin.site.register(Task,TaskAdmin)
+
+class TaskAssignAdmin(ImportExportModelAdmin):
+    list_display=['labor','status']
+admin.site.register(TaskAssignment,TaskAssignAdmin)

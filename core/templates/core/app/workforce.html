@@ -1,0 +1,37 @@
+{% extends 'maintain/partial/base.html' %}
+{% load static %}
+{% block index %}
+
+
+<div class="container">
+    <h2 class="mb-3">Attendance Records</h2>
+    <a class="add_vehicle" href="{% url 'core:add_labor' %}">Add WorkForce</a>
+    <a class="add_vehicle" href="{% url 'core:mark_attendance' %}">Add Attendance</a>
+    <a class="add_vehicle" href="{% url 'core:task_assignments' %}">Assigned Tasks Details</a>
+    <a class="add_vehicle" href="{% url 'core:assign_task' %}">Assign Tasks</a>
+<table class="mt-4">
+    <thead>
+        <tr>
+            <th>Labor</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in attendance_records %}
+        <tr>
+            <td>{{ record.labor.name }}</td>
+            <td>{{ record.date }}</td>
+            <td>{{ record.status }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="3">No records found.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+{% endblock index %}
