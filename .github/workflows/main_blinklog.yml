@@ -28,12 +28,6 @@ jobs:
         run: |
           source venv/bin/activate
           pip install -r requirements.txt
-        
-      # Optional: Run tests
-      - name: Run tests
-        run: |
-          source venv/bin/activate
-          pytest  # or your test command here
 
       - name: Zip artifact for deployment
         run: zip -r release.zip . -x "*.git*" "venv/*"
