@@ -18,7 +18,7 @@ tables_list_obj = ['assets_manage_asset', 'assets_manage_vehicle', 'core_problem
 def fetch_table_data_chunks(table_list):
     conn = sqlite3.connect('db.sqlite3')  # Ensure this path is correct
     table_data = {}
-    
+    ̀
     try:
         with conn:
             cursor = conn.cursor()
